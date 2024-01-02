@@ -1,0 +1,131 @@
+:root {
+    --softBlue:  hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --veryDarkBlueMain: hsl(217, 54%, 11%);
+    --veryDarkBlueCard: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Outfit&family=Overpass&family=Roboto&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--veryDarkBlueMain);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Outfit", sans-serif;
+}
+
+.container {
+    background-color: var(--veryDarkBlueCard);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 400px;
+    box-shadow: 0 0 1rem black;
+    color: var(--softBlue);
+
+}
+
+.images {
+    position: relative;
+}
+
+.images img:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+
+.images div {
+    position: absolute;
+    background-color: var(--softBlue);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+}
+
+.images div:hover {
+    opacity: 0.7;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.images div img {
+    position: absolute;
+    height: 48px !important;
+    width: 48px !important;
+    top: 42%;
+    left: 44%;
+    opacity: 1;
+}
+
+.b1 {
+    margin: 1rem 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.b2 {
+    margin: 0 0 1.25rem 0;
+    font-weight: 400;
+}
+
+.b3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.b3 img {
+    margin-right: 0.5rem;
+    padding: 0;
+}
+
+hr {
+    border: 1px solid var(--veryDarkBlueLine);
+    border-radius: 1rem;
+    margin: 1.25rem 0;
+}
+
+.b4 {
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    align-items: center;
+    font-size: 12px;
+}
+
+.b4 img {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    height: 1.8rem;
+    margin-right: 1rem;
+}
+
+span {
+    color: var(--white);
+}
+
+.b3 div {
+    display: flex;
+    flex-direction: row;
+}
+
+span:hover, .b1 p:hover{
+    color: var(--softBlue);
+    opacity: 0.7;
+    cursor: pointer;
+}

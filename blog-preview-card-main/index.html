@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Blog preview card</title>
+
+  <style>
+    :root {
+      --Yellow: hsl(47, 88%, 63%);
+      --White:  hsl(0, 0%, 100%);
+      --Grey: hsl(0, 0%, 50%);
+      --black: hsl(0, 0%, 7%);
+    }
+
+    @font-face {
+      font-family: Figtree;
+      src: url(fonts/Figtree-VariableFont_wght.ttf);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--Yellow);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: var(--White);
+      width: 375px;
+      height: 500px;
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: left;
+      border: 2px solid var(--black);
+      border-radius: 1rem;
+      box-shadow: 7px 7px var(--black);
+      font-family: Figtree;
+    }
+
+    .image {
+      border-radius: 1rem;
+    }
+
+    .image img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    .b1 {
+      background-color: var(--Yellow);
+      color: var(--black);
+      border-radius: 0.25rem;
+      padding: 5px;
+      width: fit-content;
+      font-size: small;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+
+    .b2 {
+      font-size: medium;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size:  x-large;
+      font-weight: 800;
+    }
+
+    .b3 {
+      color: var(--Grey);
+      font-size: medium;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .info img {
+      width: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    .info p {
+      font-weight: bold;
+      font-size: medium;
+    }
+
+    h1:hover {
+      color: var(--Yellow);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="image"><img src="images/illustration-article.svg" alt="Illustration" ></div>
+  
+    <p class="b1">Learning</p>
+
+    <p class="b2">Published 21 Dec 2023</p>
+
+    <h1>HTML & CSS foundations</h1>
+
+    <p class="b3">
+      These languages are the backbone of every website, 
+      defining structure, content, and presentation.
+    </p>
+
+    <div class="info">
+      <img src="images/image-avatar.webp" alt="Avatar Image">
+      <p>Abdulrahman Ben Omar</p>
+    </div>
+
+  </div>
+</body>
+</html>
